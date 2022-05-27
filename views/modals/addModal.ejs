@@ -1,0 +1,37 @@
+<!-- Modal -->
+<div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Contact</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form method="post" action="/contact/addContact" >
+                <div class="modal-body">
+                    <div class="form-floating mb-3">
+                        <input type="text" name="name" class="form-control" id="floatingInput" placeholder="Your Name" required>
+                        <label for="floatingInput">Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" name="number" class="form-control" id="floatingNumber" placeholder="Your Number" required>
+                        <label for="floatingNumber">Number</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" name="provider" class="form-control" id="floatingProvider" placeholder="Provider" required>
+                        <label for="floatingProvider">Provider</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="text" name="region" class="form-control" id="floatingRegion" placeholder="Region" required>
+                        <label for="floatingRegion">Region</label>
+                    </div>
+                    
+                </div>
+                <div class="modal-footer">
+                    <div class="d-grid gap-2 col-12 mx-auto">
+                        <button type="submit" class="btn btn-primary ">Add</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h2 class="mt-5 mb-3">Edit Contact</h2>
+            <form method="post" action="/contact/setContact/<%= contact.id %>?_method=PATCH" >
+                <input type="hidden" name="_method" value="PATCH">
+                <input type="hidden" name="id" value="<%= contact.id %>">
+                <div class="form-floating mb-3">
+                    <input value="<%= contact.name %>" type="text" name="name" class="form-control" id="floatingName" placeholder="Your Name" required>
+                    <label for="floatingName">Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input value="<%= contact.number %>" type="text" name="number" class="form-control" id="floatingNumber" placeholder="Your Number" required>
+                    <label for="floatingNumber">Number</label>
+                </div>
+                <div class="form-floating mb-3"">
+                    <input value="<%= contact.provider %>" type="text" name="provider" class="form-control" id="floatingProvider" placeholder="Provider" required>
+                    <label for="floatingProvider">Provider</label>
+                </div>
+                <div class="form-floating mb-3"">
+                    <input value="<%= contact.region %>" type="text" name="region" class="form-control" id="floatingRegion" placeholder="Region" required>
+                    <label for="floatingRegion">Region</label>
+                </div>
+               
+                <div class="d-grid gap-2 col-12 mx-auto">
+                    <button type="submit" class="btn btn-primary ">Edit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
